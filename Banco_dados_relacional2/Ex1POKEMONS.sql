@@ -26,7 +26,7 @@ ataque int(20),
 defesa int(20)
 
 );
--- populando tabela personagem
+-- populando tabela classe
 
 INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Elétrico","media","Terra","Água e Voador");
 INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Elétrico","inicial","Terra","Água e Voador");
@@ -43,6 +43,26 @@ INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Água","final","
 INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Planta","media","Água,Pedra e Terra","Gelo,Fogo,Inseto,Venenoso e Voador");
 INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Planta","inicial","Água,Pedra e Terra","Gelo,Fogo,Inseto,Venenoso e Voador");
 INSERT INTO tb_classe(tipo,forma,fraqueza,forcacontra) values ("Planta","final","Água,Pedra e Terra","Gelo,Fogo,Inseto,Venenoso e Voador");
+
+-- populando a tabela tb_personagem POKEMONS
+
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ('1', 'Pikachu', '10', '6', '5000', '1000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ('2', 'Pichu', '2', '3', '500', '1000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '3', 'Raichu', '13', '8', '10000', '4500');
+
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ('4', 'Charmeleon', '8', '19', '5020', '3800');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '5', 'Charmander', '4', '8.5', '1100', '1000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '6', 'Charizard', '14', '60', '1100', '9000');
+
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '7', 'Wartortle', '11', '20', '4500', '5000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '8', 'Squirtle', '4', '6', '500', '1000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '9', 'Blastoise', '17', '150', '1400', '1500');
+
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ('10', 'Ivysauro', '6', '19', '5000', '2500');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '11', 'Bulbasauro', '3', '10', '500', '1000');
+INSERT INTO db_generation_game_online.tb_personagem(fk_id_classe ,nome, idade, peso, ataque, defesa) values ( '12', 'Venusauro', '16', '40', '1300', '1235');
+
+
 
 -- selecionando
 
